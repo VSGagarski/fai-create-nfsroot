@@ -128,13 +128,13 @@ case ${1} in
 	makeroot stretch
 	echo 'DEBIAN STRETCH' > "${nfslive}/.FAI"
 	;;
-	 stretch)
+	buster)
 	echo '-- Debian 10.0 (buster)'
 	nfsroot='/srv/fai/nfsroot/debian/buster'
 	nfslive=${nfsroot}
 	tftproot='/srv/tftp/debian/buster'
 	run='fai-make-nfsroot -f'
-	makeroot stretch
+	makeroot buster
 	echo 'DEBIAN BUSTER' > "${nfslive}/.FAI"
 	;;
     precise)
